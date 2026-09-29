@@ -14,10 +14,5 @@ git pull origin main;
 
 wait 5;
 
-#Docker
-docker compose up -d;
-
-wait 5;
-
 echo "INFO : Fin du script de mise a jour.";
 
