@@ -10,8 +10,6 @@
                                                          
 echo "INFO : Lancement du script d'arrêt...";
 
-#Docker
-docker compose down;
 
 echo "INFO : Fin du script d'arrêt.";
 
