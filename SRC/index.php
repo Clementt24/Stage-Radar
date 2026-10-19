@@ -1,5 +1,8 @@
 <?php 
 session_start(); 
+
+$page_title = "Accueil";
+
 include 'includes/header.php'; 
 include 'includes/sidebar.php'; 
 ?>

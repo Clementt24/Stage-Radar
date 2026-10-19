@@ -7,6 +7,8 @@ if(!isset($_SESSION['user_id'])) {
     exit();
 }
 
+$page_title = "Statistiques";
+
 include 'includes/header.php';
 include 'includes/sidebar.php';
 ?>

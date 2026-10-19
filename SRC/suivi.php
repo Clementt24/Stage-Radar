@@ -7,6 +7,8 @@ if(!isset($_SESSION['user_id'])) {
     exit();
 }
 
+$page_title = "Suivi";
+
 include 'includes/header.php';
 include 'includes/sidebar.php';
 ?>

@@ -24,9 +24,9 @@
 
         <div class="menu-category">Administration</div>
         <ul>
+            <li><a href="https://discord.com/channels/1553853220923641946/1553853221611643012" target="_blank"><i class="fa-brands fa-discord"></i> Discord</a></li>
             <li><a href="#"><i class="fa-solid fa-chart-line"></i> Grafana</a></li>
             <li><a href="#"><i class="fa-solid fa-gear"></i> Paramètres</a></li>
-            <li><a href="#" target="_blank"><i class="fa-brands fa-discord"></i> Discord</a></li>
         </ul>
         
         <hr style="margin: 1.5rem 0; border: 0; border-top: 1px solid #e5e7eb;">

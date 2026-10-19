@@ -1,6 +1,8 @@
 <?php
 session_start();
 
+$page_title = "Login";
+
 // Identifiants en dur pour le moment (root / root)
 $valid_username = "root";
 $valid_password = "root";
