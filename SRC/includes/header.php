@@ -13,9 +13,10 @@
 <body>
 
 <nav class="navbar">
-    <div class="logo">
+    <!-- On utilise <a> au lieu de <div> pour créer un lien vers index.php -->
+    <a href="index.php" class="logo" style="text-decoration: none;">
         <img src="assets/img/logo.png" alt="Logo StageRadar" class="logo-img">
         StageRadar
-    </div>
+    </a>
     <button class="menu-btn" id="openMenu"><i class="fa-solid fa-bars"></i></button>
 </nav>

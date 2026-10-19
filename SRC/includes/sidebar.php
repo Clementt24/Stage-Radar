@@ -12,14 +12,20 @@
         <div class="menu-category">Général</div>
         <ul>
             <li><a href="index.php"><i class="fa-solid fa-house"></i> Accueil</a></li>
-            <li><a href="#"><i class="fa-solid fa-chart-pie"></i> Statistiques</a></li>
+            <li><a href="suivi.php"><i class="fa-solid fa-user-graduate"></i> Suivi Étudiants</a></li>
+            <li><a href="statistiques.php"><i class="fa-solid fa-chart-pie"></i> Statistiques</a></li>
+        </ul>
+
+        <div class="menu-category">À propos</div>
+        <ul>
+            <li><a href="https://github.com/Clementt24/Stage-Radar" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a></li>
+            <li><a href="credits.php"><i class="fa-solid fa-circle-info"></i> Crédits</a></li>
         </ul>
 
         <div class="menu-category">Administration</div>
         <ul>
             <li><a href="#"><i class="fa-solid fa-chart-line"></i> Grafana</a></li>
             <li><a href="#"><i class="fa-solid fa-gear"></i> Paramètres</a></li>
-            <li><a href="#" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a></li>
             <li><a href="#" target="_blank"><i class="fa-brands fa-discord"></i> Discord</a></li>
         </ul>
         
