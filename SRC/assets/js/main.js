@@ -3,25 +3,34 @@ document.addEventListener('DOMContentLoaded', () => {
     const openMenuBtn = document.getElementById('openMenu');
     const closeMenuBtn = document.getElementById('closeMenu');
     
-    const modal = document.getElementById('loginModal');
-    const openModalBtns = document.querySelectorAll('.open-modal');
-    const closeModalBtn = document.getElementById('closeModal');
+    // --- NOUVEAUTÉ : Vérification de la mémoire du navigateur au chargement ---
+    if (localStorage.getItem('sidebarState') === 'open') {
+        sidebar.classList.add('active');
+    }
 
-    // Gestion du menu latéral
-    if(openMenuBtn) openMenuBtn.addEventListener('click', () => sidebar.classList.add('active'));
-    if(closeMenuBtn) closeMenuBtn.addEventListener('click', () => sidebar.classList.remove('active'));
-
-    // Gestion de la modale de connexion
-    openModalBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-            sidebar.classList.remove('active'); // Ferme le menu si ouvert
-            modal.classList.add('active');
+    // Gestion de l'ouverture du menu
+    if(openMenuBtn) {
+        openMenuBtn.addEventListener('click', () => {
+            sidebar.classList.add('active');
+            localStorage.setItem('sidebarState', 'open'); // On mémorise que c'est ouvert
         });
-    });
+    }
 
-    // Fermer modale au clic sur le bouton ou à l'extérieur
-    if(closeModalBtn) closeModalBtn.addEventListener('click', () => modal.classList.remove('active'));
-    window.addEventListener('click', (e) => {
-        if (e.target === modal) modal.classList.remove('active');
+    // Gestion de la fermeture du menu
+    if(closeMenuBtn) {
+        closeMenuBtn.addEventListener('click', () => {
+            sidebar.classList.remove('active');
+            localStorage.setItem('sidebarState', 'closed'); // On mémorise que c'est fermé
+        });
+    }
+
+    // (Optionnel) Fermer le menu si on clique en dehors (sur le fond gris)
+    document.addEventListener('click', (event) => {
+        if (sidebar.classList.contains('active') && 
+            !sidebar.contains(event.target) && 
+            !openMenuBtn.contains(event.target)) {
+            sidebar.classList.remove('active');
+            localStorage.setItem('sidebarState', 'closed');
+        }
     });
 });
