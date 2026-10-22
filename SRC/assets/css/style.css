@@ -144,3 +144,11 @@ body { background-color: var(--bg-color); color: var(--text-color); overflow-x: 
 
 /* Footer */ 
 
+
+/* FAQ */
+
+.faq_section{
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}

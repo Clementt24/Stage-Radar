@@ -28,6 +28,12 @@
             <li><a href="#"><i class="fa-solid fa-gear"></i> Paramètres</a></li>
             <li><a href="#" target="_blank"><i class="fa-brands fa-discord"></i> Discord</a></li>
         </ul>
+
+        <div class="menu-category"> Une question ? Consultez notre FAQ </div>
+        <ul>
+          <li> <a href="faq.php"> <i class="fa-solid fa-circle-question"> </i> FAQ  </a></li>
+        </ul> 
+
         
         <hr style="margin: 1.5rem 0; border: 0; border-top: 1px solid #e5e7eb;">
         <a href="logout.php" class="btn-primary" style="display: block; text-align: center; text-decoration: none; background-color: #ef4444;">Déconnexion</a>
